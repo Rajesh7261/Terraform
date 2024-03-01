@@ -16,3 +16,35 @@ variable "availability_zones" {
   type = string
   default = ["us-west-2a", "us-west-2b", "us-west-2c"]
 }
+
+variable "profile"{
+  type= string
+  default= "First"
+}
+
+variable "second_profile"{
+  type= string
+  default= "Second"
+}
+
+variable "ec2_ami"{
+  type=string
+  default=""
+}
+
+variable "instance_type"{
+  type = string
+  default= "t2.micro"
+}
+
+
+variable "aws_region"{
+  type = string
+  default = ""
+}
+
+variable "second_aws_region"{ 
+  type = string
+  default = ""
+}
+
