@@ -10,8 +10,9 @@ resource "aws_security_group" "ec2-sg" {
         protocol         = "tcp"
         cidr_blocks      = ["98.87.76.56/32"]
     }
+  }
 
-   egress {
+  egress {
      from_port   = 0
      to_port     = 0
      protocol    = "-1"
